@@ -65,7 +65,7 @@ struct LoginView: View {
                         Spacer()
                     }
                 }
-                NavigationLink(destination : MapView(), isActive : $isLoginValid) {
+                NavigationLink(destination : SearchMapView(), isActive : $isLoginValid) {
                     EmptyView()
                 }.hidden()
             }
