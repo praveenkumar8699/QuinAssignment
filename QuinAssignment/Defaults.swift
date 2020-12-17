@@ -9,9 +9,6 @@ import Foundation
 
 class Defaults {
     
-    
-    
-    
     static var isLoggedIn : Bool {
         set {
             UserDefaults.standard.setValue(newValue, forKey: "isLoggedIn")
@@ -22,4 +19,8 @@ class Defaults {
         }
     }
     
+}
+
+class Auth : ObservableObject {
+    @Published var loggedIn : Bool = Defaults.isLoggedIn
 }

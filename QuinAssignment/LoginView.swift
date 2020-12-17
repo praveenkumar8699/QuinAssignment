@@ -9,11 +9,12 @@ import SwiftUI
 
 
 struct LoginView: View {
+    @Environment(\.managedObjectContext) var managedObjectContext
+    @EnvironmentObject var auth : Auth
     @State private var login = ""
     @State private var password = ""
     @State private var isEmailValid : Bool   = true
     @State private var error = ""
-    @State var isLoginValid = false
     var body: some View {
         
         VStack(alignment : .center) {
@@ -48,7 +49,7 @@ struct LoginView: View {
                 
                 Button(action : {
                     if validate(login: self.login, pass: self.password) {
-                        isLoginValid = true
+                        auth.loggedIn = true
                         Defaults.isLoggedIn = true
                         error = ""
                     } else {
@@ -65,9 +66,10 @@ struct LoginView: View {
                         Spacer()
                     }
                 }
-                NavigationLink(destination : SearchMapView(), isActive : $isLoginValid) {
+                
+                /*NavigationLink(destination : SearchMapView().environment(\.managedObjectContext, self.managedObjectContext), isActive : $isLoginValid) {
                     EmptyView()
-                }.hidden()
+                }.hidden()*/
             }
         }
     }

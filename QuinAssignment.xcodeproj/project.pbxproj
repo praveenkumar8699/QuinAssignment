@@ -11,6 +11,8 @@
 		E169B8A2258A32E7000440FD /* LandmarkAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E169B8A1258A32E7000440FD /* LandmarkAnnotation.swift */; };
 		E1766DEB258B2C06008D0145 /* QuinAssignment.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E1766DE9258B2C06008D0145 /* QuinAssignment.xcdatamodeld */; };
 		E1766DEE258B2CB1008D0145 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1766DED258B2CB1008D0145 /* DataManager.swift */; };
+		E1766DF1258B3238008D0145 /* SavedSearchesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1766DF0258B3238008D0145 /* SavedSearchesView.swift */; };
+		E1766DF9258B4800008D0145 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1766DF8258B4800008D0145 /* LandingView.swift */; };
 		E192D6562589DCDA005EDB49 /* QuinAssignmentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E192D6552589DCDA005EDB49 /* QuinAssignmentApp.swift */; };
 		E192D6582589DCDA005EDB49 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E192D6572589DCDA005EDB49 /* LoginView.swift */; };
 		E192D65A2589DCDB005EDB49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E192D6592589DCDB005EDB49 /* Assets.xcassets */; };
@@ -27,6 +29,8 @@
 		E169B8A1258A32E7000440FD /* LandmarkAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkAnnotation.swift; sourceTree = "<group>"; };
 		E1766DEA258B2C06008D0145 /* QuinAssignment.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = QuinAssignment.xcdatamodel; sourceTree = "<group>"; };
 		E1766DED258B2CB1008D0145 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		E1766DF0258B3238008D0145 /* SavedSearchesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedSearchesView.swift; sourceTree = "<group>"; };
+		E1766DF8258B4800008D0145 /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
 		E192D6522589DCDA005EDB49 /* QuinAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuinAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E192D6552589DCDA005EDB49 /* QuinAssignmentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuinAssignmentApp.swift; sourceTree = "<group>"; };
 		E192D6572589DCDA005EDB49 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -73,14 +77,16 @@
 				E192D685258A30F5005EDB49 /* Models */,
 				E192D680258A2C7C005EDB49 /* Managers */,
 				E192D6552589DCDA005EDB49 /* QuinAssignmentApp.swift */,
+				E1766DF8258B4800008D0145 /* LandingView.swift */,
 				E192D6572589DCDA005EDB49 /* LoginView.swift */,
+				E192D67D258A2BAB005EDB49 /* SearchMapView.swift */,
 				E192D6592589DCDB005EDB49 /* Assets.xcassets */,
 				E192D65E2589DCDB005EDB49 /* Info.plist */,
 				E192D65B2589DCDB005EDB49 /* Preview Content */,
 				E192D66B258A0120005EDB49 /* Defaults.swift */,
 				E192D66E258A02F9005EDB49 /* MapView.swift */,
 				E1766DE9258B2C06008D0145 /* QuinAssignment.xcdatamodeld */,
-				E192D67D258A2BAB005EDB49 /* SearchMapView.swift */,
+				E1766DF0258B3238008D0145 /* SavedSearchesView.swift */,
 				E15EFFC1258A46310032DF5A /* PlaceView.swift */,
 			);
 			path = QuinAssignment;
@@ -182,7 +188,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E169B8A2258A32E7000440FD /* LandmarkAnnotation.swift in Sources */,
+				E1766DF9258B4800008D0145 /* LandingView.swift in Sources */,
 				E192D67E258A2BAB005EDB49 /* SearchMapView.swift in Sources */,
+				E1766DF1258B3238008D0145 /* SavedSearchesView.swift in Sources */,
 				E192D66C258A0120005EDB49 /* Defaults.swift in Sources */,
 				E15EFFC2258A46310032DF5A /* PlaceView.swift in Sources */,
 				E192D688258A310F005EDB49 /* Landmark.swift in Sources */,

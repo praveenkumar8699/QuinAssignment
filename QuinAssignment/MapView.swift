@@ -66,7 +66,8 @@ struct MapView : UIViewRepresentable {
     
     
     private func drawDirection(for mapView : MKMapView) {
-        
+        mapView.removeOverlays(mapView.overlays)
+        mapView.removeAnnotations(mapView.annotations)
         if let loc_destination = destination {
             
             let currentPlacemark = MKPlacemark(coordinate: mapView.userLocation.coordinate)
@@ -97,6 +98,7 @@ struct MapView : UIViewRepresentable {
                 if let err = error {
                     print(err.localizedDescription)
                 } else if let first = response?.routes.first {
+                    
                     mapView.addOverlay(first.polyline, level: .aboveRoads)
                     let rect = first.polyline.boundingMapRect
                     mapView.setRegion(MKCoordinateRegion(rect), animated: true)
