@@ -7,7 +7,7 @@
 
 import MapKit
 
-struct Landmark {
+struct Landmark : Identifiable {
     
     let placemark : MKPlacemark
     
@@ -15,7 +15,7 @@ struct Landmark {
         return UUID()
     }
     
-    var nmae : String {
+    var name : String {
         return placemark.name ?? ""
     }
     

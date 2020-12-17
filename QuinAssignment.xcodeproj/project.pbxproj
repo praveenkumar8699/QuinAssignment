@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E15EFFBE258A41EB0032DF5A /* PlacListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15EFFBD258A41EB0032DF5A /* PlacListView.swift */; };
+		E15EFFC2258A46310032DF5A /* PlaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15EFFC1258A46310032DF5A /* PlaceView.swift */; };
 		E169B8A2258A32E7000440FD /* LandmarkAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E169B8A1258A32E7000440FD /* LandmarkAnnotation.swift */; };
+		E1766DEB258B2C06008D0145 /* QuinAssignment.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E1766DE9258B2C06008D0145 /* QuinAssignment.xcdatamodeld */; };
+		E1766DEE258B2CB1008D0145 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1766DED258B2CB1008D0145 /* DataManager.swift */; };
 		E192D6562589DCDA005EDB49 /* QuinAssignmentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E192D6552589DCDA005EDB49 /* QuinAssignmentApp.swift */; };
 		E192D6582589DCDA005EDB49 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E192D6572589DCDA005EDB49 /* LoginView.swift */; };
 		E192D65A2589DCDB005EDB49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E192D6592589DCDB005EDB49 /* Assets.xcassets */; };
@@ -21,8 +23,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E15EFFBD258A41EB0032DF5A /* PlacListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacListView.swift; sourceTree = "<group>"; };
+		E15EFFC1258A46310032DF5A /* PlaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceView.swift; sourceTree = "<group>"; };
 		E169B8A1258A32E7000440FD /* LandmarkAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkAnnotation.swift; sourceTree = "<group>"; };
+		E1766DEA258B2C06008D0145 /* QuinAssignment.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = QuinAssignment.xcdatamodel; sourceTree = "<group>"; };
+		E1766DED258B2CB1008D0145 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		E192D6522589DCDA005EDB49 /* QuinAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuinAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E192D6552589DCDA005EDB49 /* QuinAssignmentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuinAssignmentApp.swift; sourceTree = "<group>"; };
 		E192D6572589DCDA005EDB49 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -75,8 +79,9 @@
 				E192D65B2589DCDB005EDB49 /* Preview Content */,
 				E192D66B258A0120005EDB49 /* Defaults.swift */,
 				E192D66E258A02F9005EDB49 /* MapView.swift */,
+				E1766DE9258B2C06008D0145 /* QuinAssignment.xcdatamodeld */,
 				E192D67D258A2BAB005EDB49 /* SearchMapView.swift */,
-				E15EFFBD258A41EB0032DF5A /* PlacListView.swift */,
+				E15EFFC1258A46310032DF5A /* PlaceView.swift */,
 			);
 			path = QuinAssignment;
 			sourceTree = "<group>";
@@ -93,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				E192D681258A2C8C005EDB49 /* LocationManager.swift */,
+				E1766DED258B2CB1008D0145 /* DataManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -178,10 +184,12 @@
 				E169B8A2258A32E7000440FD /* LandmarkAnnotation.swift in Sources */,
 				E192D67E258A2BAB005EDB49 /* SearchMapView.swift in Sources */,
 				E192D66C258A0120005EDB49 /* Defaults.swift in Sources */,
+				E15EFFC2258A46310032DF5A /* PlaceView.swift in Sources */,
 				E192D688258A310F005EDB49 /* Landmark.swift in Sources */,
-				E15EFFBE258A41EB0032DF5A /* PlacListView.swift in Sources */,
+				E1766DEB258B2C06008D0145 /* QuinAssignment.xcdatamodeld in Sources */,
 				E192D682258A2C8C005EDB49 /* LocationManager.swift in Sources */,
 				E192D66F258A02F9005EDB49 /* MapView.swift in Sources */,
+				E1766DEE258B2CB1008D0145 /* DataManager.swift in Sources */,
 				E192D6582589DCDA005EDB49 /* LoginView.swift in Sources */,
 				E192D6562589DCDA005EDB49 /* QuinAssignmentApp.swift in Sources */,
 			);
@@ -370,6 +378,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E1766DE9258B2C06008D0145 /* QuinAssignment.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E1766DEA258B2C06008D0145 /* QuinAssignment.xcdatamodel */,
+			);
+			currentVersion = E1766DEA258B2C06008D0145 /* QuinAssignment.xcdatamodel */;
+			path = QuinAssignment.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = E192D64A2589DCDA005EDB49 /* Project object */;
 }
